@@ -3,11 +3,12 @@ import {Route , Switch} from 'react-router-dom'
 
 import Dashboard from '../pages/Dashboard'
 import Customers  from '../pages/Customers'
+
 const Routes = () => {
   return (
     <Switch>
-        <Route path="/" component={Dashboard}/>
-        <Route path="/" component={Customers}/>
+        <Route path="/" exact component={Dashboard}/>
+        <Route path="/customers" exact component={Customers}/>
     </Switch>
   )
 }
